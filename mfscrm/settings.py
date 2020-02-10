@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+import django_heroku
 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -135,4 +136,6 @@ LOGOUT_REDIRECT_URL = '/home'
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 8000
 #EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+django_heroku.settings(locals())
 
