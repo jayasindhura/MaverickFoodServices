@@ -1,0 +1,27 @@
+h2 {
+    color: Green;
+
+}
+.navbar {
+            background-color: Green
+        }
+
+.navbar .navbar-brand {
+           color: White
+        }
+.navbar .navbar-nav li a
+        {
+           color: White
+        }
+.navbar .navbar-nav .dropdown-menu li a
+  {
+           color: Orange
+        }
+.navbar .navbar-nav .dropdown li a
+  {
+           color: Orange
+        }
+body {
+    background: orange url("images/restaurants.png") no-repeat;
+    background-size: 2300px
+}

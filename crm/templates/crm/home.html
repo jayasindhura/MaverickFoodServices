@@ -1,7 +1,7 @@
 {% extends 'crm/base.html' %}
 {% load static %}
 {% block content %}
-
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
    <body>
     <html>
             {% if user.is_authenticated %}
@@ -13,24 +13,26 @@
                 </div>
             {% endif %}
             <div class="content container">
+
                 <div class="row">
                     <div class="col-md-12">
                         <div class="links">
                             <!-- Example row of columns -->
                             <div class="row">
                                 <div class="col-md-3">
-                                    <div class="thumbnail">
+                                                                         <div class="thumbnail">
                                         <img src="{% static "images/customer.jpg" %}" alt="customer"/>
                                         <div class="caption">
                                             <h2>Customer</h2>
-                                            <p>We see our success in our customers success </p>
+                                            <p>We see our success in our customer</p>
                                             <p><a class="btn btn-primary" href="{% url 'crm:customer_list' %}"
                                                   role="button">View
-                                                details &raquo;</a></p>
+                                                details &raquo; &raquo;</a></p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-3">
+
                                     <div class="thumbnail">
                                         <img src="{% static "images/cupcakes.jpeg" %}" alt="cupcakes"/>
                                         <div class="caption">
@@ -43,6 +45,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-3">
+
                                     <div class="thumbnail">
                                         <img src="{% static "images/lunch.jpeg" %}" alt="lunch"/>
                                         <div class="caption">

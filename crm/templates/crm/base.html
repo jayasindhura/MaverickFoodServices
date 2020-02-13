@@ -1,5 +1,5 @@
-
 {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 
 <html lang="en">
 <head>
@@ -14,7 +14,11 @@
         .navbar {
             margin-bottom: 0;
             border-radius: 0;
+            background-color: Green;
         }
+
+
+
 
         /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
         .row.content {
@@ -23,15 +27,15 @@
 
         /* Set gray background color and 100% height */
         .sidenav {
-            padding-top: 20px;
-            background-color: #f1f1f1;
+            padding-top: 10px;
+            background-color: #19ff2c;
             height: 100%;
         }
 
         /* Set black background color, white text and some padding */
         footer {
-            background-color: #555;
-            color: white;
+            background-color: #FF4500;
+            color: orange;
             padding: 15px;
         }
 
@@ -95,6 +99,7 @@
     </div>
 </nav>
 <div class="content container">
+
     <div class="row">
         <div class="col-md-8">
             {% block content %}
@@ -146,3 +151,4 @@
     </div>
 </body>
 </html>
+
