@@ -134,12 +134,18 @@ LOGIN_REDIRECT_URL = '/home'
 LOGOUT_REDIRECT_URL = '/home'
 
 
+#Gmail crdentials
+#EMAIL_HOST = 'smtp.gmail.com'
+#EMAIL_HOST_USER = 'sindhupheroku@gmail.com'
+#EMAIL_HOST_PASSWORD = 'heroku123'
+#EMAIL_PORT = 587
+#EMAIL_USE_TLS = True
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'sindhupheroku@gmail.com'
-EMAIL_HOST_PASSWORD = 'heroku123'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = 'f35082985faecb'
+EMAIL_HOST_PASSWORD = '3fc11bfd079cf7'
+EMAIL_PORT = 2525
+
 
 
 django_heroku.settings(locals())
