@@ -46,7 +46,7 @@ INSTALLED_APPS = [
     'crispy_forms',
     'mathfilters',
     'django.contrib.humanize',
-    #'password_reset',
+    #'django.contrib.postgres',
 ]
 
 MIDDLEWARE = [
@@ -60,6 +60,14 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'mfscrm.urls'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.mailtrap.io'
+EMAIL_HOST_USER = 'b6464d3d90aeff'
+EMAIL_HOST_PASSWORD = 'de5aa58ea4aea6'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
 
 TEMPLATES = [
     {
@@ -141,10 +149,6 @@ LOGOUT_REDIRECT_URL = '/home'
 #EMAIL_PORT = 587
 #EMAIL_USE_TLS = True
 
-EMAIL_HOST = 'smtp.mailtrap.io'
-EMAIL_HOST_USER = 'f35082985faecb'
-EMAIL_HOST_PASSWORD = '3fc11bfd079cf7'
-EMAIL_PORT = 2525
 
 
 
