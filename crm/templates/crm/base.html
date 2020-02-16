@@ -78,6 +78,7 @@
                <li><a href="{% url 'crm:service_list' %}">Services</a></li>
                 <li><a href="{% url 'crm:product_list' %}">Products</a></li>
 
+
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 {% if user.is_authenticated %}
@@ -93,6 +94,8 @@
                     <li><a href="{% url 'login' %}"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                     <li><a href="{% url 'password_reset' %}">Reset Password</a></li>
                     <li><a href="{% url 'password_change' %}">change Password</a></li>
+                    <li><a href="{% url 'crm:signup' %}">Signup</a></li>
+
                 {% endif %}
             </ul>
         </div>

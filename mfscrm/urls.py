@@ -16,6 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 from django.urls import path
+from crm import views as core_views
 
 
 
@@ -24,5 +25,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('crm.urls')),
     path('accounts/', include('django.contrib.auth.urls')),
-
+    url(r'^signup/$', core_views.signup, name='signup'),
  ]
